@@ -1,5 +1,5 @@
 /* Cache only this game's fixed assets. Never cache sign-in pages or APIs. */
-const CACHE='isla-3d-offline-v2-20261012-mobile';
+const CACHE='isla-3d-offline-v3-20261012-mobile';
 const ASSETS=['./','world.js','world.css','three.module.js','three.core.js','style.css','adventure.css','content.js','app.js','adventure.js','offline.js','manifest.webmanifest','assets/icon.svg','assets/icon-192.png','assets/icon-512.png','assets/nunito.woff2','assets/dm-sans.woff2'];
 const absolute=p=>new URL(p,self.registration.scope).href;
 const allowed=new Set(ASSETS.map(absolute));
