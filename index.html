@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5eb">
+  <meta name="description" content="Una pequeña isla, mil descubrimientos. Un juego de sonidos, letras y primeras palabras para chicos de 3 a 5 años, con mouse o touch.">
+  <title>La isla de las palabras 3D · Lila y amigos</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="La isla 3D">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="adventure.css">
+  <link rel="stylesheet" href="world.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="adventure.js" defer></script>
+  <script src="offline.js" defer></script>
+  <script type="module" src="world.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="brand" aria-label="Volver al inicio"><span class="brand-mark" aria-hidden="true">✿</span><span>la isla<span class="brand-sub">de las palabras · 3D</span></span></button>
+    <div class="header-actions">
+      <button class="icon-button" id="sound" aria-label="Desactivar voz" title="Voz"><span id="sound-icon"></span></button>
+      <button class="icon-button" id="album-button" aria-label="Abrir mi libro" title="Mi libro"><span id="book-icon"></span><b id="seed-count">0</b></button>
+      <button class="icon-button" id="settings-button" aria-label="Opciones para adultos" title="Para adultos"><span id="settings-icon"></span></button>
+    </div>
+  </header>
+  <div class="install-access"><button class="small-button" data-action="install-game">Instalar el juego en este dispositivo</button></div>
+  <main id="app"></main>
+  <footer class="footer"><span>Una aventura a tu ritmo</span><span id="offline-status" role="status"></span><span>Mouse o touch <i aria-hidden="true">·</i> Sin prisas</span></footer>
+  <dialog id="settings-dialog" class="panel-dialog"><div id="settings-content"></div></dialog>
+  <dialog id="album-dialog" class="panel-dialog album-dialog"><div id="album-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
